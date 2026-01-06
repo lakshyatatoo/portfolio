@@ -3,7 +3,33 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Page Layout</title>
+    <title>PoRtFoLiO</title>
+    <style>
+      label,
+      textarea {
+        display: block;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        font-weight: bolder;
+      }
+      img {
+        width: 200px;
+        height: auto;
+        border-radius: 10px;
+      }
+      button {
+        margin-top: 10px;
+        padding: 10px 20px;
+        background-color: #4caf50;
+        color: white;
+        border: purple 5px solid;
+        border-radius: 10%;
+        cursor: pointer;
+      }
+      button:hover {
+        background-color: #45a049;
+      }
+    </style>
   </head>
 
   <body>
@@ -18,7 +44,6 @@
         <a href="https://github.com/lakshyatatoo">Github</a>
         <a href="https://leetcode.com/u/lakshya_tatoo/">LeetCode</a>
       </nav>
-      <h2>Head ahead for signing up to my newsletter!</h2>
     </div>
 
     <div>
@@ -38,26 +63,38 @@
       </p>
     </div>
     <div>
-        Newsletter Signup
-        <form action="" method="">
-            <label for=""></label>
-            <input type="text">
-            <label for=""></label>
-            <input type="text">
-            <label for=""></label>
-            <input type="text" name="" id=""
-            <label for=""></label>
-            <input type="text">
-            <label for=""></label>
-            <input type="text">
-            <textarea name="Message" placeholder="Please Share your message and any feeback"></textarea>
-            <button type="submit">Submit</button>
-            
-        </form>
+      <h1>Head ahead for signing up to my newsletter!</h1>
+      <h3>Newsletter Signup</h3>
+      <form action="https://formspree.io/f/xaqngkpj" method="POST">
+        <label for="name">Name:</label>
+        <input type="text" placeholder="Enter you name" required />
+
+        <label for="email">Email:</label>
+        <input type="email" placeholder="Please enter your Email" required />
+
+        <label for="contactno">Contact No:</label>
+        <input type="tel" pattern="[0-9]{10}" maxlength="10" required />
+
+        <label for="gender">Gender:</label>
+        <input type="radio" name="gender" />Male
+        <input type="radio" name="gender" />Female
+
+        <label for="terms">Terms and Conditions</label>
+        <input type="checkbox" name="terms" required /> I agree to the terms and
+        conditions
+
+        <label for="message">Feedback</label>
+        <textarea
+          name="message"
+          placeholder="Please Share your message and any feeback"
+        ></textarea>
+        <label for="submit"></label>
+        <button type="submit">Submit</button>
+      </form>
     </div>
     <div>
       <h3>Contact Me</h3>
-      <p>Email:lakshyatatoo31@gmail.com</p>
+      <p>Email: lakshyatatoo31@gmail.com</p>
       <p>Phone: +91 6375988908</p>
       <h3>Social Handles</h3>
       <a href="https://www.instagram.com/lakshya_tatoo/">Instagram</a>
